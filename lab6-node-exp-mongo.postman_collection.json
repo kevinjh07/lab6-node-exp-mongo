@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "324b09ba-3f8a-462a-906a-c01df6e60717",
+		"name": "lab6-node-exp-mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET localhost:3000/v1/candidatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/v1/candidatos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"candidatos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET localhost:3000/v1/candidatos/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/v1/candidatos/5fc043f4b08db8c038432b11",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"candidatos",
+						"5fc043f4b08db8c038432b11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST localhost:3000/v1/candidatos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Bon Scott\",\n    \"partido\": \"Aliança pelo Brasil\",\n    \"numero\": \"38\",\n    \"votos\": \"5000\",\n    \"status\": \"ATIVO\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/v1/candidatos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"candidatos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH localhost:3000/v1/candidatos",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Bon Scott\",\n    \"partido\": \"Aliança pelo Brasil 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/v1/candidatos/5fc03f2cafef6bb7144dd208",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"candidatos",
+						"5fc03f2cafef6bb7144dd208"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE localhost:3000/v1/candidatos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Bon Scott\",\n    \"partido\": \"Aliança pelo Brasil 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/v1/candidatos/5fc043f4b08db8c038432b11",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"candidatos",
+						"5fc043f4b08db8c038432b11"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
