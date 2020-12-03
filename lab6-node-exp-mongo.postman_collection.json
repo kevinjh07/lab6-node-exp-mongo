@@ -6,129 +6,287 @@
 	},
 	"item": [
 		{
-			"name": "GET localhost:3000/v1/candidatos",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/v1/candidatos",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"v1",
-						"candidatos"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GET localhost:3000/v1/candidatos/{id}",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:3000/v1/candidatos/5fc043f4b08db8c038432b11",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"v1",
-						"candidatos",
-						"5fc043f4b08db8c038432b11"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "POST localhost:3000/v1/candidatos",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"nome\": \"Bon Scott\",\n    \"partido\": \"Aliança pelo Brasil\",\n    \"numero\": \"38\",\n    \"votos\": \"5000\",\n    \"status\": \"ATIVO\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Candidatos",
+			"item": [
+				{
+					"name": "GET localhost:3000/v1/candidatos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/v1/candidatos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"candidatos"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:3000/v1/candidatos",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"v1",
-						"candidatos"
-					]
+				{
+					"name": "GET localhost:3000/v1/candidatos/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/v1/candidatos/5fc043f4b08db8c038432b11",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"candidatos",
+								"5fc043f4b08db8c038432b11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH localhost:3000/v1/candidatos",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Bon Scott\",\n    \"partido\": \"Aliança pelo Brasil 2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/v1/candidatos/5fc03f2cafef6bb7144dd208",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"candidatos",
+								"5fc03f2cafef6bb7144dd208"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE localhost:3000/v1/candidatos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Bon Scott\",\n    \"partido\": \"Aliança pelo Brasil 2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/v1/candidatos/5fc043f4b08db8c038432b11",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"candidatos",
+								"5fc043f4b08db8c038432b11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST localhost:3000/v1/candidatos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Bon Scott\",\n    \"partido\": \"Aliança pelo Brasil\",\n    \"numero\": \"38\",\n    \"votos\": \"5000\",\n    \"status\": \"ATIVO\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/v1/candidatos",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"candidatos"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
-			"name": "PATCH localhost:3000/v1/candidatos",
-			"request": {
-				"method": "PATCH",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"nome\": \"Bon Scott\",\n    \"partido\": \"Aliança pelo Brasil 2\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Posts",
+			"item": [
+				{
+					"name": "GET localhost:3000/v1/posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/v1/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"posts"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:3000/v1/candidatos/5fc03f2cafef6bb7144dd208",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"v1",
-						"candidatos",
-						"5fc03f2cafef6bb7144dd208"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "DELETE localhost:3000/v1/candidatos",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"nome\": \"Bon Scott\",\n    \"partido\": \"Aliança pelo Brasil 2\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "GET localhost:3000/v1/posts/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/v1/posts/5fc966ca8ac2c1db496a74f1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"posts",
+								"5fc966ca8ac2c1db496a74f1"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "localhost:3000/v1/candidatos/5fc043f4b08db8c038432b11",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"v1",
-						"candidatos",
-						"5fc043f4b08db8c038432b11"
-					]
+				{
+					"name": "GET localhost:3000/v1/posts/userid/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/v1/posts/userid/18eabf4d-f1bd-4367-aa0a-58ad15d857a5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"posts",
+								"userid",
+								"18eabf4d-f1bd-4367-aa0a-58ad15d857a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT localhost:3000/v1/candidatos",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"conteudo\": \"Phasellus dictum aliquet aliquet. Suspendisse vitae odio in turpis commodo sollicitudin ut in ligula.\",\n    \"status\": \"publicado\",\n    \"foto\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAYAAAD0In+KAAAABHNCSVQICAgIfAhkiAAAABl0RVh0U29mdHdhcmUAZ25vbWUtc2NyZWVuc2hvdO8Dvz4AAAAmdEVYdENyZWF0aW9uIFRpbWUAdGVyIDI0IG5vdiAyMDIwIDIzOjIxOjU3r/WqzAAAABFJREFUCJlj1NAx+c/AwMAAAAi5AYnP/JCOAAAAAElFTkSuQmCC\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/v1/posts/5fc966ca8ac2c1db496a74f1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"posts",
+								"5fc966ca8ac2c1db496a74f1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE localhost:3000/v1/candidatos",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Bon Scott\",\n    \"partido\": \"Aliança pelo Brasil 2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/v1/posts/5fc9669f8ac2c1db496a74f0",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"posts",
+								"5fc9669f8ac2c1db496a74f0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST localhost:3000/v1/candidatos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"18eabf4d-f1bd-4367-aa0a-58ad15d857a5\",\n    \"conteudo\": \"Duis sed augue rhoncus, porttitor eros nec, congue orci. Ut dignissim nisi non eros posuere hendrerit.\",\n    \"status\": \"criado\",\n    \"foto\": \"data:image/jpeg;base64,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\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/v1/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"posts"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"protocolProfileBehavior": {}

@@ -28,9 +28,10 @@ app.use(express.json())
 
 const subscribersRouter = require('./routes/subscribers')
 const candidatosRouter = require('./routes/candidatos')
+const postsRouter = require('./routes/posts')
 
 app.use('/v1/subscribers', subscribersRouter)
 app.use('/v1/candidatos', candidatosRouter)
-
+app.use('/v1/posts', postsRouter)
 
 app.listen(3000, () => console.log('Server started.'))
